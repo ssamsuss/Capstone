@@ -3,25 +3,41 @@
 ## Installation
 
 `fasterq-dump` is part of the [NCBI SRA Toolkit](https://github.com/ncbi/sra-tools).
-Use the provided install script to set it up automatically:
+
+### Already installed?
+
+If the toolkit was previously downloaded (e.g. to `~/sratoolkit.3.3.0-alma_linux64/`), just
+run the install script once to register it in your `PATH` — it will detect the existing
+installation and skip re-downloading:
+
+```bash
+bash install_sra_toolkit.sh
+source ~/.bashrc   # or open a new terminal
+```
+
+Verify with:
+
+```bash
+fasterq-dump --version
+```
+
+### Fresh install
+
+If the toolkit is not yet installed, the same script handles it automatically:
 
 ```bash
 bash install_sra_toolkit.sh
 ```
 
-The script tries the following installation methods in order:
+It tries the following methods in order:
 
 | Method | Requirement |
 |---|---|
+| **Already present** in `PATH` or `~/sratoolkit.*/bin/` | None — skips install |
 | **conda / mamba** (recommended) | Anaconda or Miniconda in `PATH` |
 | **apt-get** | Ubuntu / Debian with `sudo` access |
-| **NCBI binary release** | Linux x86_64, `curl` in `PATH` |
-
-After installation, verify with:
-
-```bash
-fasterq-dump --version
-```
+| **dnf / yum** | AlmaLinux / RHEL / CentOS / Fedora with `sudo` access |
+| **NCBI binary release** | Linux x86_64, `curl` in `PATH` (auto-selects correct OS tarball) |
 
 ---
 
