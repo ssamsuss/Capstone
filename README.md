@@ -1,5 +1,30 @@
 # Capstone
 
+## Installation
+
+`fasterq-dump` is part of the [NCBI SRA Toolkit](https://github.com/ncbi/sra-tools).
+Use the provided install script to set it up automatically:
+
+```bash
+bash install_sra_toolkit.sh
+```
+
+The script tries the following installation methods in order:
+
+| Method | Requirement |
+|---|---|
+| **conda / mamba** (recommended) | Anaconda or Miniconda in `PATH` |
+| **apt-get** | Ubuntu / Debian with `sudo` access |
+| **NCBI binary release** | Linux x86_64, `curl` in `PATH` |
+
+After installation, verify with:
+
+```bash
+fasterq-dump --version
+```
+
+---
+
 ## Convert SRA to FASTQ
 
 ### Problem
