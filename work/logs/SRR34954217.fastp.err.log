@@ -1,0 +1,48 @@
+nohup: ignoring input
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 17231832
+total bases: 2584774800
+Q20 bases: 2455390453(94.9944%)
+Q30 bases: 2377043890(91.9633%)
+
+Read2 before filtering:
+total reads: 17231832
+total bases: 2584774800
+Q20 bases: 2377987651(91.9998%)
+Q30 bases: 2275104249(88.0194%)
+
+Read1 after filtering:
+total reads: 16967430
+total bases: 2519308175
+Q20 bases: 2432405642(96.5505%)
+Q30 bases: 2358842638(93.6306%)
+
+Read2 after filtering:
+total reads: 16967430
+total bases: 2487930229
+Q20 bases: 2364766939(95.0496%)
+Q30 bases: 2265243919(91.0493%)
+
+Filtering result:
+reads passed filter: 33934860
+reads failed due to low quality: 3236
+reads failed due to too many N: 22698
+reads failed due to too short: 502870
+reads with adapter trimmed: 39344
+bases trimmed due to adapters: 1629970
+
+Duplication rate: 0.447474%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: /workspaces/Capstone/work/logs/SRR34954217.fastp.json
+HTML report: /workspaces/Capstone/work/logs/SRR34954217.fastp.html
+
+fastp -i /workspaces/Capstone/work/raw/SRR34954217_1.fastq -I /workspaces/Capstone/work/raw/SRR34954217_2.fastq -o /workspaces/Capstone/work/trimmed/SRR34954217_1.trim.fastq.gz -O /workspaces/Capstone/work/trimmed/SRR34954217_2.trim.fastq.gz --detect_adapter_for_pe --cut_front --cut_tail --cut_window_size 4 --cut_mean_quality 20 --length_required 50 --thread 6 --html /workspaces/Capstone/work/logs/SRR34954217.fastp.html --json /workspaces/Capstone/work/logs/SRR34954217.fastp.json 
+fastp v0.23.4, time used: 104 seconds

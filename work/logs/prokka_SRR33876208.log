@@ -1,0 +1,13 @@
+nohup: ignoring input
+[17:19:36] This is prokka 1.13
+[17:19:36] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[17:19:36] Homepage is https://github.com/tseemann/prokka
+[17:19:36] Local time is Sat Mar 21 17:19:36 2026
+[17:19:36] You are codespace
+[17:19:36] Operating system is linux
+[17:19:36] You have BioPerl 1.007002
+[17:19:36] System has 16 cores.
+[17:19:36] Will use maximum of 6 cores.
+[17:19:36] Annotating as >>> Bacteria <<<
+[17:19:36] '/workspaces/Capstone/work/assembly/SRR32830912/final.contigs.fa' is not a readable non-empty FASTA file
+ERROR conda.cli.main_run:execute(142): `conda run prokka --force --outdir /workspaces/Capstone/work/prokka/SRR32830912 --prefix SRR32830912 --cpus 6 --metagenome /workspaces/Capstone/work/assembly/SRR32830912/final.contigs.fa` failed. (See above for error)

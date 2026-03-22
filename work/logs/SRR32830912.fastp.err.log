@@ -1,0 +1,50 @@
+nohup: ignoring input
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 7123899
+total bases: 1075708749
+Q20 bases: 1051733741(97.7712%)
+Q30 bases: 1031394189(95.8804%)
+
+Read2 before filtering:
+total reads: 7123899
+total bases: 1075708749
+Q20 bases: 1052083123(97.8037%)
+Q30 bases: 1021975026(95.0048%)
+
+Read1 after filtering:
+total reads: 6787572
+total bases: 822859619
+Q20 bases: 813159813(98.8212%)
+Q30 bases: 802661266(97.5453%)
+
+Read2 after filtering:
+total reads: 6787572
+total bases: 822809492
+Q20 bases: 811811033(98.6633%)
+Q30 bases: 793071738(96.3858%)
+
+Filtering result:
+reads passed filter: 13575144
+reads failed due to low quality: 69734
+reads failed due to too many N: 3792
+reads failed due to too short: 599128
+reads with adapter trimmed: 8851498
+bases trimmed due to adapters: 470405096
+
+Duplication rate: 1.20327%
+
+Insert size peak (evaluated by paired-end reads): 103
+
+JSON report: /workspaces/Capstone/work/logs/SRR32830912.fastp.json
+HTML report: /workspaces/Capstone/work/logs/SRR32830912.fastp.html
+
+fastp -i /workspaces/Capstone/work/raw/SRR32830912_1.fastq -I /workspaces/Capstone/work/raw/SRR32830912_2.fastq -o /workspaces/Capstone/work/trimmed/SRR32830912_1.trim.fastq.gz -O /workspaces/Capstone/work/trimmed/SRR32830912_2.trim.fastq.gz --detect_adapter_for_pe --cut_front --cut_tail --cut_window_size 4 --cut_mean_quality 20 --length_required 50 --thread 6 --html /workspaces/Capstone/work/logs/SRR32830912.fastp.html --json /workspaces/Capstone/work/logs/SRR32830912.fastp.json 
+fastp v0.23.4, time used: 48 seconds
