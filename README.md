@@ -95,3 +95,59 @@ fasterq-dump SRR000001 --outdir ./data
 # Classic single-threaded download
 fastq-dump --gzip SRR000001 --outdir ./data
 ```
+
+---
+
+## Tools Used In This Project
+
+This repository uses a metagenome peptide-mining workflow from raw reads to
+nonredundant short-protein candidates.
+
+### Environment and package management
+
+- Conda (with named environments such as `prokka_bio` and `prokka_env`)
+- Bioconda and conda-forge channels for bioinformatics package installation
+
+### Read preprocessing and data retrieval
+
+- NCBI SRA Toolkit (`prefetch`, `fasterq-dump`, `fastq-dump`, `sra-stat`)
+- fastp (adapter trimming and read QC, HTML/JSON reports)
+
+### Assembly
+
+- MEGAHIT (metagenome assembly from paired-end reads)
+
+### Annotation and gene calling
+
+- Prokka (v1.13) for prokaryotic annotation
+- Prodigal (called by Prokka; metagenome mode for CDS prediction)
+- Barrnap (called by Prokka for rRNA prediction)
+- Aragorn (called by Prokka for tRNA/tmRNA prediction)
+- MinCED (called by Prokka for CRISPR detection)
+- BLAST+ / blastp (v2.16.0+ observed in environment; used by Prokka)
+- HMMER / hmmscan (called by Prokka for HAMAP searches)
+- GNU Parallel (used by Prokka to parallelize blastp/hmmscan)
+- tbl2asn (called by Prokka for GenBank/Sequin output)
+
+### Peptide candidate generation
+
+- SeqKit (v2.3.0 observed) for length filtering to 1-80 aa candidates
+- CD-HIT (v4.8.1) for 100% identity nonredundant clustering
+
+### Required Perl/XML dependency for Prokka
+
+- XML::Simple (Perl module dependency used by Prokka)
+
+If Prokka fails with XML-related Perl errors, install Prokka in a clean conda
+environment with strict channel priority (Bioconda-first) to ensure compatible
+Perl/XML dependencies are resolved together.
+
+### Common output locations in this repository
+
+- `work/raw/` and `work/trimmed/`: reads
+- `work/assembly/`: MEGAHIT assemblies (`final.contigs.fa`)
+- `work/prokka/`: annotation outputs (`.faa`, `.gff`, `.ffn`, `.fna`, etc.)
+- `work/peptides/`: extracted protein FASTA and 1-80 aa filtered peptides
+- `work/cdhit/`: per-sample and global nonredundant peptide sets
+- `work/logs/`: fastp and pipeline logs
+
