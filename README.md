@@ -1,6 +1,6 @@
 # Capstone
 
-Bioinformatics Capstone project – RNA-seq / SRA data retrieval and analysis pipeline.
+Bioinformatics Capstone project – SRA data retrieval and analysis pipeline for AI discovery of antimicrobial peptide candidates.
 
 ---
 
