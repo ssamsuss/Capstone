@@ -1,0 +1,12 @@
+0_Toxins.FASTA
+0_ena_ERP183784_sequence.fasta.txt
+0_keratin.FASTA
+0_nueropeptides.FASTA
+0_protein.faa
+0_trypt.FASTA
+0_uniprotkb_accession_A0A0E9R287_OR_access_2026_03_27.fasta
+0uniprotkb_accession_A0A0E9PEC6_OR_access_2026_03_27.fasta
+0uniprotkb_accession_A0A0E9PUW1_OR_access_2026_03_27.fasta
+0uniprotkb_accession_A0A0E9QTI8_OR_access_2026_03_27.fasta
+1_Antimicrobial_amps.fasta
+1_synthetic_amps.fasta
