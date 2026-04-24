@@ -1,0 +1,4 @@
+
+# Large read_mapping report files (>100MB, exceed GitHub limit)
+work/read_mapping/reports/contig_abundance_all_samples.tsv
+work/read_mapping/reports/gene_coverage_all_samples.tsv

@@ -1,0 +1,470 @@
+=== SRR33876232 ===
+Using contigs: /workspaces/Capstone/work/prokka/SRR33876232/SRR33876232.fna
+Downloading SRR33876232 from ENA...
+Downloaded paired-end FASTQ for SRR33876232
+Building bowtie2 index for SRR33876232...
+Settings:
+  Output files: "/workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /workspaces/Capstone/work/prokka/SRR33876232/SRR33876232.fna
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:01
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 32522139
+Using parameters --bmax 24391605 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 24391605 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:01
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:01
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Split 1, merged 7; iterating...
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 1.85841e+07 (target: 24391604)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 7
+  Reserving size (24391605) for bucket 1
+  Calculating Z arrays for bucket 1
+  Entering block accumulator loop for bucket 1:
+  bucket 1: 10%
+  bucket 1: 20%
+  bucket 1: 30%
+  bucket 1: 40%
+  bucket 1: 50%
+  bucket 1: 60%
+  bucket 1: 70%
+  bucket 1: 80%
+  bucket 1: 90%
+  bucket 1: 100%
+  Sorting block of length 19212667 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 19212668 for bucket 1
+Getting block 2 of 7
+  Reserving size (24391605) for bucket 2
+  Calculating Z arrays for bucket 2
+  Entering block accumulator loop for bucket 2:
+  bucket 2: 10%
+  bucket 2: 20%
+  bucket 2: 30%
+  bucket 2: 40%
+  bucket 2: 50%
+  bucket 2: 60%
+  bucket 2: 70%
+  bucket 2: 80%
+  bucket 2: 90%
+  bucket 2: 100%
+  Sorting block of length 15785129 for bucket 2
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 15785130 for bucket 2
+Getting block 3 of 7
+  Reserving size (24391605) for bucket 3
+  Calculating Z arrays for bucket 3
+  Entering block accumulator loop for bucket 3:
+  bucket 3: 10%
+  bucket 3: 20%
+  bucket 3: 30%
+  bucket 3: 40%
+  bucket 3: 50%
+  bucket 3: 60%
+  bucket 3: 70%
+  bucket 3: 80%
+  bucket 3: 90%
+  bucket 3: 100%
+  Sorting block of length 12639230 for bucket 3
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 12639231 for bucket 3
+Getting block 4 of 7
+  Reserving size (24391605) for bucket 4
+  Calculating Z arrays for bucket 4
+  Entering block accumulator loop for bucket 4:
+  bucket 4: 10%
+  bucket 4: 20%
+  bucket 4: 30%
+  bucket 4: 40%
+  bucket 4: 50%
+  bucket 4: 60%
+  bucket 4: 70%
+  bucket 4: 80%
+  bucket 4: 90%
+  bucket 4: 100%
+  Sorting block of length 22241061 for bucket 4
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 22241062 for bucket 4
+Getting block 5 of 7
+  Reserving size (24391605) for bucket 5
+  Calculating Z arrays for bucket 5
+  Entering block accumulator loop for bucket 5:
+  bucket 5: 10%
+  bucket 5: 20%
+  bucket 5: 30%
+  bucket 5: 40%
+  bucket 5: 50%
+  bucket 5: 60%
+  bucket 5: 70%
+  bucket 5: 80%
+  bucket 5: 90%
+  bucket 5: 100%
+  Sorting block of length 23884921 for bucket 5
+  (Using difference cover)
+  Sorting block time: 00:00:04
+Returning block of 23884922 for bucket 5
+Getting block 6 of 7
+  Reserving size (24391605) for bucket 6
+  Calculating Z arrays for bucket 6
+  Entering block accumulator loop for bucket 6:
+  bucket 6: 10%
+  bucket 6: 20%
+  bucket 6: 30%
+  bucket 6: 40%
+  bucket 6: 50%
+  bucket 6: 60%
+  bucket 6: 70%
+  bucket 6: 80%
+  bucket 6: 90%
+  bucket 6: 100%
+  Sorting block of length 15769423 for bucket 6
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 15769424 for bucket 6
+Getting block 7 of 7
+  Reserving size (24391605) for bucket 7
+  Calculating Z arrays for bucket 7
+  Entering block accumulator loop for bucket 7:
+  bucket 7: 10%
+  bucket 7: 20%
+  bucket 7: 30%
+  bucket 7: 40%
+  bucket 7: 50%
+  bucket 7: 60%
+  bucket 7: 70%
+  bucket 7: 80%
+  bucket 7: 90%
+  bucket 7: 100%
+  Sorting block of length 20556120 for bucket 7
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 20556121 for bucket 7
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 23318232
+fchr[G]: 65440753
+fchr[T]: 107314882
+fchr[$]: 130088557
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 54633314 bytes to primary EBWT file: /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.1.bt2.tmp
+Wrote 32522144 bytes to secondary EBWT file: /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.2.bt2.tmp
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 130088557
+    bwtLen: 130088558
+    sz: 32522140
+    bwtSz: 32522140
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 8130535
+    offsSz: 32522140
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 677545
+    numLines: 677545
+    ebwtTotLen: 43362880
+    ebwtTotSz: 43362880
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:49
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:01
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 32522139
+Using parameters --bmax 24391605 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 24391605 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:01
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:01
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 1.85841e+07 (target: 24391604)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 7
+  Reserving size (24391605) for bucket 1
+  Calculating Z arrays for bucket 1
+  Entering block accumulator loop for bucket 1:
+  bucket 1: 10%
+  bucket 1: 20%
+  bucket 1: 30%
+  bucket 1: 40%
+  bucket 1: 50%
+  bucket 1: 60%
+  bucket 1: 70%
+  bucket 1: 80%
+  bucket 1: 90%
+  bucket 1: 100%
+  Sorting block of length 21799330 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 21799331 for bucket 1
+Getting block 2 of 7
+  Reserving size (24391605) for bucket 2
+  Calculating Z arrays for bucket 2
+  Entering block accumulator loop for bucket 2:
+  bucket 2: 10%
+  bucket 2: 20%
+  bucket 2: 30%
+  bucket 2: 40%
+  bucket 2: 50%
+  bucket 2: 60%
+  bucket 2: 70%
+  bucket 2: 80%
+  bucket 2: 90%
+  bucket 2: 100%
+  Sorting block of length 23728064 for bucket 2
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 23728065 for bucket 2
+Getting block 3 of 7
+  Reserving size (24391605) for bucket 3
+  Calculating Z arrays for bucket 3
+  Entering block accumulator loop for bucket 3:
+  bucket 3: 10%
+  bucket 3: 20%
+  bucket 3: 30%
+  bucket 3: 40%
+  bucket 3: 50%
+  bucket 3: 60%
+  bucket 3: 70%
+  bucket 3: 80%
+  bucket 3: 90%
+  bucket 3: 100%
+  Sorting block of length 17836454 for bucket 3
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 17836455 for bucket 3
+Getting block 4 of 7
+  Reserving size (24391605) for bucket 4
+  Calculating Z arrays for bucket 4
+  Entering block accumulator loop for bucket 4:
+  bucket 4: 10%
+  bucket 4: 20%
+  bucket 4: 30%
+  bucket 4: 40%
+  bucket 4: 50%
+  bucket 4: 60%
+  bucket 4: 70%
+  bucket 4: 80%
+  bucket 4: 90%
+  bucket 4: 100%
+  Sorting block of length 20933608 for bucket 4
+  (Using difference cover)
+  Sorting block time: 00:00:03
+Returning block of 20933609 for bucket 4
+Getting block 5 of 7
+  Reserving size (24391605) for bucket 5
+  Calculating Z arrays for bucket 5
+  Entering block accumulator loop for bucket 5:
+  bucket 5: 10%
+  bucket 5: 20%
+  bucket 5: 30%
+  bucket 5: 40%
+  bucket 5: 50%
+  bucket 5: 60%
+  bucket 5: 70%
+  bucket 5: 80%
+  bucket 5: 90%
+  bucket 5: 100%
+  Sorting block of length 19602543 for bucket 5
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 19602544 for bucket 5
+Getting block 6 of 7
+  Reserving size (24391605) for bucket 6
+  Calculating Z arrays for bucket 6
+  Entering block accumulator loop for bucket 6:
+  bucket 6: 10%
+  bucket 6: 20%
+  bucket 6: 30%
+  bucket 6: 40%
+  bucket 6: 50%
+  bucket 6: 60%
+  bucket 6: 70%
+  bucket 6: 80%
+  bucket 6: 90%
+  bucket 6: 100%
+  Sorting block of length 9972425 for bucket 6
+  (Using difference cover)
+  Sorting block time: 00:00:01
+Returning block of 9972426 for bucket 6
+Getting block 7 of 7
+  Reserving size (24391605) for bucket 7
+  Calculating Z arrays for bucket 7
+  Entering block accumulator loop for bucket 7:
+  bucket 7: 10%
+  bucket 7: 20%
+  bucket 7: 30%
+  bucket 7: 40%
+  bucket 7: 50%
+  bucket 7: 60%
+  bucket 7: 70%
+  bucket 7: 80%
+  bucket 7: 90%
+  bucket 7: 100%
+  Sorting block of length 16216127 for bucket 7
+  (Using difference cover)
+  Sorting block time: 00:00:02
+Returning block of 16216128 for bucket 7
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 23318232
+fchr[G]: 65440753
+fchr[T]: 107314882
+fchr[$]: 130088557
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 54633314 bytes to primary EBWT file: /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.rev.1.bt2.tmp
+Wrote 32522144 bytes to secondary EBWT file: /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.rev.2.bt2.tmp
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 130088557
+    bwtLen: 130088558
+    sz: 32522140
+    bwtSz: 32522140
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 8130535
+    offsSz: 32522140
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 677545
+    numLines: 677545
+    ebwtTotLen: 43362880
+    ebwtTotSz: 43362880
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:46
+Renaming /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.3.bt2.tmp to /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.3.bt2
+Renaming /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.4.bt2.tmp to /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.4.bt2
+Renaming /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.1.bt2.tmp to /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.1.bt2
+Renaming /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.2.bt2.tmp to /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.2.bt2
+Renaming /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.rev.1.bt2.tmp to /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.rev.1.bt2
+Renaming /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.rev.2.bt2.tmp to /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.contigs.idx.rev.2.bt2
+Mapping SRR33876232...
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+(ERR): bowtie2-align exited with value 141
+=== SRR33876232 ===
+Using contigs: /workspaces/Capstone/work/prokka/SRR33876232/SRR33876232.fna
+Mapping SRR33876232...
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+[WARNING] Failed to launch x86-64-v3 version, staying with default
+14276131 reads; of these:
+  14276131 (100.00%) were paired; of these:
+    13192861 (92.41%) aligned concordantly 0 times
+    1022734 (7.16%) aligned concordantly exactly 1 time
+    60536 (0.42%) aligned concordantly >1 times
+    ----
+    13192861 pairs aligned concordantly 0 times; of these:
+      186125 (1.41%) aligned discordantly 1 time
+    ----
+    13006736 pairs aligned 0 times concordantly or discordantly; of these:
+      26013472 mates make up the pairs; of these:
+        25250742 (97.07%) aligned 0 times
+        639909 (2.46%) aligned exactly 1 time
+        122821 (0.47%) aligned >1 times
+11.56% overall alignment rate
+DONE SRR33876232 -> /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.sorted.bam (FASTQ cleaned up)
+=== SRR33876232 ===
+Using contigs: /workspaces/Capstone/work/prokka/SRR33876232/SRR33876232.fna
+SKIP: existing BAM found at /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.sorted.bam
+=== SRR33876232 ===
+Using contigs: /workspaces/Capstone/work/prokka/SRR33876232/SRR33876232.fna
+SKIP: existing BAM found at /workspaces/Capstone/work/read_mapping/mapped/SRR33876232.sorted.bam
